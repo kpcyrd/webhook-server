@@ -1,0 +1,8 @@
+addr = "127.0.0.1:8080"
+
+[hook.asdf]
+prog = "./docs/hook1.sh"
+args = ["ohai"]
+
+[hook.sleep]
+prog = "./docs/hook2.sh"
