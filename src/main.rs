@@ -27,7 +27,8 @@ fn run() -> Result<()> {
         sandbox::activate_stage1().expect("failed to activate stage1");
         child::run(socket.to_owned())
     } else {
-        let config = config::parse_from_file("narnia.toml")?; // TODO
+        let config = matches.value_of("config").unwrap();
+        let config = config::parse_from_file(config)?;
         parent::run(config)
     }
 }
