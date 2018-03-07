@@ -6,8 +6,7 @@ use std::env;
 use std::net::SocketAddr;
 use std::collections::HashSet;
 
-use errors::ResultExt;
-use ::Result;
+use errors::{Result, ResultExt};
 
 #[derive(Debug)]
 struct SandboxConfig {

@@ -17,9 +17,10 @@ use tk_listen::ListenExt;
 use serde_json;
 use ipc_channel::ipc::IpcSender;
 
+use sandbox;
 use sandbox::ipc::Message;
+use errors::Result;
 
-use ::Result;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct JsonReply {
@@ -122,6 +123,8 @@ impl Server {
         let listener = TcpListener::bind(&self.addr, &lp.handle())?;
         let cfg = Config::new().done();
         let h1 = lp.handle();
+
+        sandbox::activate_stage2().expect("failed to activate stage2");
 
         let done = listener.incoming()
             .sleep_on_error(Duration::from_millis(100), &lp.handle())
