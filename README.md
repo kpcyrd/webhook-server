@@ -1,4 +1,9 @@
-# narnia
+# narnia [![Build Status][travis-img]][travis] [![crates.io][crates-img]][crates]
+
+[travis-img]:   https://travis-ci.org/kpcyrd/narnia.svg?branch=master
+[travis]:       https://travis-ci.org/kpcyrd/narnia
+[crates-img]:   https://img.shields.io/crates/v/narnia.svg
+[crates]:       https://crates.io/crates/narnia
 
 narnia is a simple http server that allows starting programs with webhooks.
 

@@ -7,6 +7,9 @@ license = "AGPL-3.0"
 repository = "https://github.com/kpcyrd/narnia"
 readme = "README.md"
 
+[badges]
+travis-ci = { repository = "kpcyrd/narnia" }
+
 [dependencies]
 tk-http= "0.3.8"
 tk-listen= "0.1"
