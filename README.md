@@ -42,6 +42,10 @@ process from the privileged parent process that is able to spawn new processes.
     execute command         |
     from value              |
 
+## Similar projects
+
+https://github.com/adnanh/webhook
+
 ## License
 
 AGPLv3+
