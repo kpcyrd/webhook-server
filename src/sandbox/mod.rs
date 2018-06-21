@@ -1,8 +1,6 @@
 pub mod ipc;
 #[cfg(target_os="linux")]
 pub mod seccomp;
-#[cfg(target_os="linux")]
-pub mod syscalls;
 
 use errors::Result;
 

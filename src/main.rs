@@ -1,9 +1,8 @@
+#![warn(unused_extern_crates)]
 extern crate narnia;
 extern crate env_logger;
 extern crate clap;
 extern crate error_chain;
-#[cfg(target_os="linux")]
-extern crate seccomp_sys;
 
 mod args;
 
